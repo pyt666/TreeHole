@@ -2,22 +2,12 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://www.springframework.org/schema/beans
-    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
-    <bean id="helloWorld1" class = "entity.HelloWord1" scope = "request">
-    	<property name="message" value = "Hello World!"></property>
-    	<property name="user" value = "pyt1"></property>
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd"
+    default-init-method="init"
+    default-destroy-method="destroy2">   
+    <bean id="helloWorld1" class = "entity.HelloWord1">
+       <property name="message" value = "Hello World!"></property>
+       <property name="user" value = "pyt"></property>
     </bean> 
-   <!--  <bean id="helloWorld2" class = "entity.HelloWord2" lazy-init="true">
-    	<property name="message" value = "Hello World!"></property>
-    	<property name="user" value = "pyt2"></property>
-    </bean> 
-    <bean id="helloWorld3" class = "entity.HelloWord3" init-method = "">
-    	<property name="message" value = "Hello World!"></property>
-    	<property name="user" value = "pyt3"></property>
-    </bean> 
-    <bean id="helloWorld4" class = "entity.HelloWord4" destroy-method = "">
-    	<property name="message" value = "Hello World!"></property>
-    	<property name="user" value = "pyt4"></property>
-    </bean>  -->
-      
+    <bean id="exampleBean" class = "entity.ExampleBean"/>        
 </beans>

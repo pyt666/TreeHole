@@ -22,4 +22,11 @@ public class HelloWord1 {
 	public void getUser() {
 		System.out.println("User is " + user);
 	}
+	
+	public void init() {
+	    System.out.println("HelloWord1---Bean is going through init.");
+	}
+	public void destroy2(){
+	    System.out.println("HelloWord1---Bean will destroy now.");
+	}
 }
