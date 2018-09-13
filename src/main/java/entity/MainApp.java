@@ -19,7 +19,7 @@ public class MainApp {
 	public static void main(String[] args) {
 		AbstractApplicationContext context = 
 				new ClassPathXmlApplicationContext("Beans.xml");
-		HelloWord1 obj = (HelloWord1) context.getBean("helloWorld1");         
+		HelloWorld1 obj = (HelloWorld1) context.getBean("helloWorld1");         
         obj.getUser();
         obj.getMessage();
 		context.registerShutdownHook();

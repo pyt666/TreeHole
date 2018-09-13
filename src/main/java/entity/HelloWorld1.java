@@ -7,7 +7,7 @@ package entity;
  * @author pyt
  *
  */
-public class HelloWord1 {
+public class HelloWorld1 {
 	private String message;
 	private String user;
 	public void setUser(String user) {
