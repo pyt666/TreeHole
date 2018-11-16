@@ -25,7 +25,7 @@ import org.apache.poi.poifs.filesystem.POIFSFileSystem;
 public class excelReader {
 	public static void main(String[] args) throws Exception {
 		//获取整个excel文件
-		InputStream stream = new  FileInputStream("F:\\excelWriterTest.xls");
+		InputStream stream = new  FileInputStream("C:\\Users\\26304\\Desktop\\cell_link设备导入模板.xls");
 		POIFSFileSystem fs = new POIFSFileSystem(stream);
 		HSSFWorkbook wb = new HSSFWorkbook(fs);
 		//获取excel文件的sheet1
